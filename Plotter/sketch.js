@@ -11,8 +11,14 @@ function draw(){
         pnt = arr[i];
         x=cos(pnt[0])*pnt[1];
         y=sin(pnt[0])*pnt[1];
-        ellipse(x+400,y+400,2,2);      
+        ellipse(x+400,400-y,2,2);      
     }
+    noFill();
+    ellipse(400,400,2,2);
+    ellipse(400,400,100,100);
+    ellipse(400,400,200,200);
+    ellipse(400,400,300,300);
+    ellipse(400,400,400,400);
 }
 
 function handleFiles(file){
